@@ -1,0 +1,37 @@
+spring:
+  application:
+    name: zcxAgent
+  profiles:
+    active: local
+  ai:
+    vectorstore:
+      pgvector:
+        index-type: HNSW
+        dimensions: 1536
+        distance-type: COSINE_DISTANCE
+        max-document-batch-size: 10000
+#  datasource:
+#    url: jdbc:postgresql://rm-cn-2zm49sea100043mo.rwlb.rds.aliyuncs.com/zxc_agent
+#    username: my_user
+#    password: Zxc123456
+  datasource:
+    url: jdbc:mysql://localhost:3306/chat_memory
+    username: root
+    password: 123456
+    driver: com.mysql.cj.jdbc.Driver
+server:
+  port: 8123
+  servlet:
+    context-path: /api
+# Swagger
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  group-configs:
+    - group: 'zxcAgent'
+      paths-to-match: '/**'
+      packages-to-scan: com.zcxAgent.controller
+#advisor日志配置
+#logging:
+#  level:
+#    org.springframework.ai.chat.client.advisor: debug
