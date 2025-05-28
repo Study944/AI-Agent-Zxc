@@ -25,14 +25,17 @@ public class StudyDocReader {
     }
 
     List<Document> loadMarkdown(){
+
         List<Document> documents = new ArrayList<>();
         for (Resource resource : resourceList) {
             String filename = resource.getFilename();
+            String status = filename.substring(0, filename.indexOf(".")-1);
             MarkdownDocumentReaderConfig readerConfig = MarkdownDocumentReaderConfig.builder()
                     .withHorizontalRuleCreateDocument(true)
                     .withIncludeCodeBlock(false)
                     .withIncludeBlockquote(false)
                     .withAdditionalMetadata("filename", filename)
+                    .withAdditionalMetadata("status", status)
                     .build();
             MarkdownDocumentReader reader = new MarkdownDocumentReader(resource,readerConfig);
             documents.addAll(reader.get());

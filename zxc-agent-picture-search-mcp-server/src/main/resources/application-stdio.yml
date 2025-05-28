@@ -1,0 +1,11 @@
+spring:
+  ai:
+    mcp:
+      server:
+        name: zxc-agent-picture-search-mcp-server
+        version: 1.0.0
+        type: SYNC
+        stdio: true
+  main:
+    web-application-type: none
+    banner-mode: off

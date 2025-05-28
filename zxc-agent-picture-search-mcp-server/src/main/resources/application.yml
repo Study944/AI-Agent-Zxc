@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: zxc-agent-picture-search-mcp-server
+  profiles:
+    active: stdio
+server:
+  port: 8999

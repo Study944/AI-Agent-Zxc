@@ -17,7 +17,7 @@ import static org.springframework.ai.vectorstore.pgvector.PgVectorStore.PgIndexT
 /**
  * pgvector基于postgres向量存储配置
  */
-@Configuration
+//@Configuration
 public class PgVectorConfig {
 
     @Resource

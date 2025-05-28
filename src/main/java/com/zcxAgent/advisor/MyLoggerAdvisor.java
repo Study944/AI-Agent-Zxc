@@ -27,7 +27,7 @@ public class MyLoggerAdvisor implements CallAroundAdvisor, StreamAroundAdvisor {
 
 	@Override
 	public int getOrder() {
-		return 100;
+		return 100000;
 	}
 
 	/**

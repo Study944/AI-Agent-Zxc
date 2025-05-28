@@ -10,6 +10,14 @@ spring:
         dimensions: 1536
         distance-type: COSINE_DISTANCE
         max-document-batch-size: 10000
+    mcp:
+      client:
+        stdio:
+          servers-configuration: classpath:mcp-client.json
+#        sse:
+#          connections:
+#            server1:
+#              url: http://localhost:8999
 #  datasource:
 #    url: jdbc:postgresql://rm-cn-2zm49sea100043mo.rwlb.rds.aliyuncs.com/zxc_agent
 #    username: my_user

@@ -1,0 +1,23 @@
+{
+  "mcpServers": {
+    "amap-maps": {
+      "command": "npx.cmd",
+      "args": [
+        "-y",
+        "@amap/amap-maps-mcp-server"
+      ],
+      "env": {
+        "AMAP_MAPS_API_KEY": "b6080e57d6b318f85603eae134ba1917"
+      }
+    },
+    "zxc-agent-picture-search-mcp-server": {
+      "command": "java",
+      "args": [
+        "-Dlogging.pattern.console=",
+        "-jar",
+        "zxc-agent-picture-search-mcp-server/target/zxc-agent-picture-search-mcp-server-0.0.1-SNAPSHOT.jar"
+      ],
+      "env": {}
+    }
+  }
+}

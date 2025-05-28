@@ -25,6 +25,7 @@ public class StudyRagCloudAdvisorsConfig {
                 DashScopeDocumentRetrieverOptions.builder()
                         .withIndexName("计算机助学助手")
                         .build());
+
         // RetrievalAugmentationAdvisor 检索增强顾问
         return RetrievalAugmentationAdvisor.builder()
                 .documentRetriever(retriever)

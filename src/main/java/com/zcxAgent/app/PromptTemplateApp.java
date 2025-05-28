@@ -22,7 +22,8 @@ import static org.springframework.ai.chat.client.advisor.AbstractChatMemoryAdvis
  */
 @Component
 @Slf4j
-public class PromptTemplateApp {
+public class
+PromptTemplateApp {
 
     private final ChatClient chatClient;
 

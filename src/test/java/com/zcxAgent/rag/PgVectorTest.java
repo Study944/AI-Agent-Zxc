@@ -1,8 +1,6 @@
 package com.zcxAgent.rag;
 
 import jakarta.annotation.Resource;
-import lombok.Locked;
-import org.junit.Assert;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.ai.document.Document;
@@ -11,7 +9,6 @@ import org.springframework.ai.vectorstore.VectorStore;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.List;
-import java.util.Map;
 
 @SpringBootTest
 public class PgVectorTest {
