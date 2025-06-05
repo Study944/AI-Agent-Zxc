@@ -46,9 +46,6 @@ src/
 tmp/
 ├── files/
 ├── pdf/
-│   ├── Dating_Plan.pdf
-│   ├── date_plan.pdf
-│   └── 约会计划.pdf
 └── resource/
 zxc-agent-picture-search-mcp-server/  # 可能包含图片搜索和多模态内
 容处理相关服务
